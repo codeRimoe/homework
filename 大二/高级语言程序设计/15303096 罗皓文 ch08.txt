@@ -1,0 +1,191 @@
+一、选择
+
+//01-05 BDAAA 06-10 AABBD 11-15 DCDCB 16-20 AAAAC 21-25 DDCAA 26-28 CDC
+
+
+
+
+
+二、编程
+
+
+*************************** keep this line in one line or don‘t auto-return ***************************
+
+
+//请保持上一行为完整的一行以便于阅读注释
+
+----------------------------------------------------------------------------------------------------
+1.
+#include <stdio.h>
+void copystr(char *p1,char *p2,int m){
+    int t=0;
+    m--;                                                    //transform natural sort to pointer num.
+    for(;(*(p2+m));m++,t++){*(p1+t)=*(p2+m);}               //copy
+    *(p1+m)='\0';                                           //add a stop signal
+}
+int main(){
+    char s1[20]="heretopaste",s2[20]="tocopythisstring";
+    copystr(s1,s2,3);
+    puts (s1);
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------
+2.
+#include <stdio.h>
+int abs(int a){
+    return a<0?a*=-1:a;                 //count abs
+}
+int cmpstr(char *p1, char *p2){
+    int d=0;
+    for(;((*p1)&&(*p2));p1++,p2++){     //when ASCII of both *p1 & *p2 equal 0 break
+        if(*p1!=*p2){
+            d=abs((*p1)-(*p2));         //return the different of ASCII
+            break;                      //if not same break
+        }
+    }
+    return d;
+}
+int main(){
+    char s1[20]={},s2[20]={};
+    gets(s1);
+    gets(s2);
+    printf("%d\n",cmpstr(s1, s2));
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------
+3.
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+void ran(int *p){                                   //random num
+    int i=0;
+    srand((unsigned)time(0));                       //rand seed
+    printf("a=\n");
+    for(;i<20;i++){
+        p[i]=rand()%101;                            //random num between [0,100]
+        printf("%d ",p[i]);
+    }
+    printf("\n");
+}
+int cont(int *p){                                   //count how many num less than 60
+    int m=0,i=0;
+    for(;i<20;i++)if(*(p+i)<60)m++;
+    return m;
+}
+void input(int *b,int *a){                          //copy the num into another array
+    int i=0,j=0;
+    for(;i<20;i++){
+        if(*(a+i)>=60){                             //copy only when num no less than 60
+            *(b+j)=*(a+i);
+            j++;
+        }
+    }
+}
+void sort(int *p,int m){                            //sort the array
+    int temp=0,i=0,j=0;
+    m--;
+    for(;i<m;i++){
+        for(j=0;j<m-i;j++){
+            if(*(p+j)>*(p+j+1))temp=*(p+j),*(p+j)=*(p+j+1),*(p+j+1)=temp;
+        }
+    }
+}
+int main(){
+    int a[20]={},*b=NULL,i=0,c=0;
+    ran(a);                                         //some random num,print
+    c=cont(a);                                      //c represent how many num less than 60
+    b=(int *)malloc(sizeof(int)*(20-c));            //creat a size-float array,size depend on c
+    if(b==NULL){                                    //error if out of memory
+        printf("Error:out of memory!");
+        exit(0);
+    }
+    input(b,a);                                     //copy the num into another array
+    printf("b=\n");
+    for(;i<(20-cont(a));i++)printf("%d ",b[i]);     //print num less than 60
+    printf("\n");
+    printf("＜60：[%d]个\t≥60：[%d]个\n",c,20-c);
+    sort(b,20-c);                                   //sort the array
+    printf("b_sort=\n");
+    for(i=0;i<(20-cont(a));i++)printf("%d ",b[i]);  //print
+    printf("\n");
+    free(b);                                        //free the memory b
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------
+4.
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int tens(int x){                                //count x power of 10
+    int s=1;
+    for(;x>0;x--,s*=10);
+    return s;
+}
+int distin(char x){                             //distinguish num and other char
+    int t=x;
+    if(('0'>x)||('9'<x))t=-1;                   //ASCII < '0' or > '9' is not a num
+    else t-='0';                                //num return is value,else return -1
+    return t;
+}
+int cont(int *p,int x){                         //count out how many num-group
+    int i=0,m=0,n=0;
+    for(;i<x;i++){
+        if(*(p+i)+1)m++;                        //point to char:(*(p+i)+1)=0 num:m++
+        else if(m)n++,m=0;                      //point to char and last one is num(m!=0)
+    }
+    if(*(p+i-1)+1)n++;
+    return n;
+}
+void num(int *a,char *b,int n){                 //change char array into digit array
+    n-=2;                                       //add -1 at beginning & bottom
+    int i=0;
+    for(;i<n;i++)*(a+i+1)=distin(*(b+i));       //distinguish num and other char(-1 represent not-num)
+    *a=-1,*(a+i+1)=-1;                          //add -1 at beginning & bottom
+}
+void fin(int *out,int *in,int ono,int ino){     //transform digit to num and put into array
+    int i=ino-1,j=ono-1,k=0,x=0;
+    for(;i>=0;i--){
+        if(*(in+i)+1)x+=*(in+i)*tens(k),k++;    //from back to front change digit into Decimel num
+        else if(x)*(out+j)=x,j--,x=0,k=0;       //when meet a not-num char put the sum into num array
+    }
+}
+int main(){
+    int *a=NULL,*b=NULL,cx=0,c=0,i=0;
+    char *ac;
+    scanf("%d",&c);                             //get the size of string
+    ac=(char *)malloc(sizeof(char)*c);          //create char float-size array
+    if(ac==NULL){                               //error if out of memory
+        printf("Error:out of memory!");
+        exit(0);
+    }
+    getchar();                                  //ignore last input(enter/return) before get string
+    for(i=0;i<c;i++)scanf("%c",&ac[i]);         //get string
+    printf("输入的字符为：\n");
+    for(i=0;i<c;i++)printf("%c",*(ac+i));       //asure input
+    printf("\n");
+    c+=2;                                       //add -1 at front and back,or it might lose a num
+    b=(int *)malloc(sizeof(int)*c);             //create int float-size array
+    if(b==NULL){                                //erroe if out of memory
+        printf("Error:out of memory!");
+        exit(0);
+    }
+    num(b,ac,c);
+    //for(i=0;i<c;i++)printf("%d\t",*(b+i));    //test the size-float array b
+    cx=cont(b,c);                               //the size depends on how many num-group
+    free(ac);                                   //free the memory ac
+    a=(int *)malloc(sizeof(int)*cx);            //create int float-size array
+    if(a==NULL){                                //erroe if out of memory
+        printf("Error:out of memory!");
+        exit(0);
+    }
+    fin(a,b,cx,c);                              //transform digit to num and put into array
+    free(b);                                    //free the memory b
+    printf("字符中共有%d个数,分别为：\n",cx);
+    for(i=0;i<cx;i++)printf("%d  ",*(a+i));     //print
+    printf("\n");
+    free(a);                                    //free the memory a
+    return 0;
+}
