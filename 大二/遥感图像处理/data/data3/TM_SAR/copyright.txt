@@ -1,4 +1,0 @@
-ERS and LANDSAT images used in this tutorial are provided courtesy 
-of the European Space Agency (ESA) and Eurimage (used with permission) 
-and may not be redistributed without explicit permission from these
-organizations.

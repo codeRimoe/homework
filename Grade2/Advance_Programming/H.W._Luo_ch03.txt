@@ -1,0 +1,39 @@
+﻿一、
+01-05 DBDAB
+06-10 DCABB
+11-12 BA
+
+二、
+1.
+#include <stdio.h>
+int main(){
+    float r,d,c,s,pi;
+    printf("请输入\n圆的半径r=");
+    scanf("%f",&r);
+    pi=3.14159;
+    d=2*r;
+    c=pi*d;
+    s=pi*r*r;
+    printf("圆的直径d=%f\n圆的周长C=%f\n圆的面积S=%f\n",d,c,s);
+    return 0;
+}
+2.
+#include <stdio.h>
+int main(){
+    float f,c;
+    printf("请输入华氏温度（°F）\nt=");
+    scanf("%f",&f);
+    c=5*(f-32)/9;
+    printf("转换为摄氏温度t=%.702f°C\n",c);
+    return 0;
+}
+3.
+#include <stdio.h>
+int main(){
+    char a,b;
+    printf("请输入一个大写字母\n");
+    scanf("%c",&a);
+    b=a+'a'-'A';
+    printf("对应的小写字母为%c\n",b);
+    return 0;
+}

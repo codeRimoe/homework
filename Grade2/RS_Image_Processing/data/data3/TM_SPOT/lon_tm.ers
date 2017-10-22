@@ -1,0 +1,52 @@
+DatasetHeader Begin
+	Version		= "5.5"
+	LastUpdated	= Thu May 27 17:17:42 GMT 1999
+	DataSetType	= ERStorage
+	DataType	= Raster
+	ByteOrder	= LSBFirst
+	CoordinateSpace Begin
+		Datum		= "OSGB36"
+		Projection	= "TMOSGB"
+		CoordinateType	= EN
+		Rotation	= 0:0:0.0
+	CoordinateSpace End
+	RasterInfo Begin
+		CellType	= Unsigned8BitInteger
+		CellInfo Begin
+			Xdimension	= 28
+			Ydimension	= 28
+		CellInfo End
+		NrOfLines	= 560
+		NrOfCellsPerLine	= 1007
+		RegistrationCoord Begin
+			Eastings	= 502122
+			Northings	= 184123
+		RegistrationCoord End
+		NrOfBands	= 3
+		BandId Begin
+			Value		= "Red Layer"
+		BandId End
+		BandId Begin
+			Value		= "Green Layer"
+		BandId End
+		BandId Begin
+			Value		= "Blue Layer"
+		BandId End
+		RegionInfo Begin
+			Type		= Polygon
+			RegionName	= "All"
+			SourceDataset	= "G:\\users\\paulr\\lon_tm"
+			RGBcolour Begin
+				Red			= 65535
+				Green		= 65535
+				Blue		= 65535
+			RGBcolour End
+			SubRegion	= {
+				0	0
+				0	560
+				1007	560
+				1007	0
+			}
+		RegionInfo End
+	RasterInfo End
+DatasetHeader End

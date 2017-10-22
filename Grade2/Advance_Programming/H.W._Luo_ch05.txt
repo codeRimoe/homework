@@ -1,0 +1,70 @@
+﻿01-05 CBAAD
+06-10 BCDBC
+11-12 CD
+
+1 36
+2【1】2x+4y==90
+3【1】r=m,m=n,n=r【2】m%n
+
+1
+#include <stdio.h>
+int main() {
+    int x,y;
+    x=0,y=0;
+    for(;x*x+y*y<100;y=0,x++){
+        for(;x*x+y*y<100;y++){
+            if(x==0){
+                if(y==0)printf("(0,0)\n");
+                else printf("(%d,%d)\t(%d,%d)\n",x,y,x,-y);
+            }
+            else{
+                if(y==0)printf("(%d,%d)\t(%d,%d)\n",x,y,-x,y);
+                else printf("(%d,%d)\t(%d,%d)\t(%d,%d)\t(%d,%d)\n",x,y,-x,y,x,-y,-x,-y);
+            }
+        }
+    }
+}
+
+2
+#include <stdio.h>
+int main() {
+    int x;
+    for(x=1;;x++){
+        if((x%2==1)&&(x%5==4)&&(x%6==5)&&(x%7==0)){
+        printf("最少阶梯数为%d\n",x);
+        break;
+        }
+    }
+}
+
+3
+#include <stdio.h>
+int main() {
+    int x,i;
+    for(i=0,x=95859;i<=140;x+=7,i++){
+        if((x%10==x/10000%10)&&(x/10%10==x/1000%10)){
+            printf("路程示数为%d,%dkm/h\n",x,i);
+        }
+    }
+}
+
+4
+#include <stdio.h>
+int main() {
+    int a,b,c,d,i;
+    for(a=1;a<=5;a++){
+        for(b=1;b<=5;b++){
+            for(c=1;c<=5;c++){
+                for(d=1;d<=5;d++){
+                    if((a!=b)&&(a!=c)&&(a!=d)&&(b!=c)&&(b!=d)&&(c!=d)&&(a!=1)&&(b!=2)&&(c!=3)){
+                        printf("%d,%d,%d,%d,%d\n",a,b,c,d,1+2+3+4+5-a-b-c-d);
+                        i++;
+                    }
+                }
+            }
+        }
+    }
+    printf("共%d种方法",i);
+}
+
+}
