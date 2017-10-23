@@ -1,4 +1,0 @@
-The TM data included in this directory are Copyright, European Space Agency, 
-and distributed by Eurimage/NRSC. The SPOT data are Copyright CNES, 1994, 
-distributed by Spot Image/NRSC. Both datasets are used with permision 
-(NRSC, 1999). These data may not be used for commercial purposes.
