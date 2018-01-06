@@ -2,7 +2,7 @@
 
 ## About
 
-These documents are part of my homework and note during college.
+These documents are part of my homework and note during college, part of these documents refer to others' work.
 
 I study in School of Geography and Planning, Sun Yat-sen University as an undergraduated student during 2015~2019. Major subject is Geographical Information Science. 
 
@@ -14,7 +14,7 @@ The docunments can be used for any purposes, but under the Apache License, Versi
 
 ## 简介
 
-此处的文档是我大学期间的作业、笔记和个人整理。
+此处的文档问本人大学修读学士学位期间的作业、笔记和个人整理，部分参考自他人的工作。
 
 2015～2019年期间，我在中山大学地理科学与规划学院就读本科，主修地理信息科学。
 
@@ -45,7 +45,11 @@ The docunments can be used for any purposes, but under the Apache License, Versi
 * graph.c
 * Learn_Historical_materialism_from_German_Ideology.docx
 
-[爬虫入门笔记（二） - 单身问题的社会学关怀](http://blog.rimoe.ml/2017/09/04/post01/)
+### * Grade 3
+
+* Practice_of_RS_and_GIS_Application_Software(IDE and Arcpy)
+* Quantitative_Remote_Sensing
+* other
 
 ---
 
