@@ -20,7 +20,7 @@ The docunments can be used for any purposes, but under the Apache License, Versi
 
 此处文档可以用于Apache许可授予的一切用途，包括商用，但不允许违反该许可的使用，如商标使用等。请注意作者不提供本项目的后续服务，并不承担使用这些文档的风险或责任。使用时必须保留复制权声明及提供许可副本，若对原文件进行修改的应提供更改声明。
 
-## 目录
+## 目录 - Content
 
 ### * Grade 1
 
@@ -49,6 +49,9 @@ The docunments can be used for any purposes, but under the Apache License, Versi
 
 * Practice_of_RS_and_GIS_Application_Software(IDE and Arcpy)
 * Quantitative_Remote_Sensing
+* Photogrammetry
+* Computer_Graphics
+* Quantitative_Geography
 * other
 
 ---
