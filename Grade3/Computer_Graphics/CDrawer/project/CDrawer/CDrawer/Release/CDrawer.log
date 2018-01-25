@@ -1,0 +1,88 @@
+﻿生成启动时间为 2018/1/21 16:41:12。
+     1>项目“C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\CDrawer\CDrawer.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\”。
+       InitializeBuildStatus:
+         正在创建“Release\CDrawer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CDrawer.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\CDrawer.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CDrawer.cpp CDrawerDoc.cpp CDrawerView.cpp Circle.cpp CLine.cpp Ctrans.cpp Curve.cpp Cut.cpp Fill.cpp IDTrans.cpp MainFrm.cpp
+         CDrawer.cpp
+         CDrawerDoc.cpp
+         CDrawerView.cpp
+         Circle.cpp
+     1>Circle.cpp(82): warning C4244: “初始化”: 从“const double”转换到“int”，可能丢失数据
+     1>Circle.cpp(85): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Circle.cpp(88): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Circle.cpp(89): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Circle.cpp(94): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Circle.cpp(109): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+         CLine.cpp
+     1>CLine.cpp(54): warning C4244: “=”: 从“LONG”转换到“float”，可能丢失数据
+     1>CLine.cpp(55): warning C4244: “=”: 从“LONG”转换到“float”，可能丢失数据
+     1>CLine.cpp(141): warning C4244: “+=”: 从“float”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(145): warning C4244: “+=”: 从“float”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(150): warning C4244: “+=”: 从“float”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(155): warning C4244: “+=”: 从“float”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(204): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(205): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(206): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>CLine.cpp(207): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+         Ctrans.cpp
+     1>Ctrans.cpp(147): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>Ctrans.cpp(147): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+         Curve.cpp
+     1>Curve.cpp(81): warning C4018: “<”: 有符号/无符号不匹配
+     1>Curve.cpp(86): warning C4018: “<”: 有符号/无符号不匹配
+     1>Curve.cpp(105): warning C4018: “<”: 有符号/无符号不匹配
+     1>Curve.cpp(108): warning C4018: “<”: 有符号/无符号不匹配
+     1>Curve.cpp(139): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(140): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(141): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(142): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(143): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(144): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(145): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(146): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(152): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(153): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(154): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(155): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(157): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(158): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(159): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+     1>Curve.cpp(160): warning C4244: “+=”: 从“double”转换到“LONG”，可能丢失数据
+         Cut.cpp
+         Fill.cpp
+         IDTrans.cpp
+         MainFrm.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /l"0x0804" /IRelease\ /nologo /fo"Release\CDrawer.res" CDrawer.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\CDrawer.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\CDrawer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\CDrawer.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\CDrawer.lib" /MACHINE:X86 Release\CDrawer.res
+         Release\CDrawer.obj
+         Release\CDrawerDoc.obj
+         Release\CDrawerView.obj
+         Release\Circle.obj
+         Release\CLine.obj
+         Release\Ctrans.obj
+         Release\Curve.obj
+         Release\Cut.obj
+         Release\Fill.obj
+         Release\IDTrans.obj
+         Release\MainFrm.obj
+         Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+         CDrawer.vcxproj -> C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\CDrawer.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\Release\CDrawer.exe;#1" /manifest Release\CDrawer.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Release\CDrawer.unsuccessfulbuild”。
+         正在对“Release\CDrawer.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\GIS\Desktop\15303096罗皓文\project\CDrawer\CDrawer\CDrawer.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.71
