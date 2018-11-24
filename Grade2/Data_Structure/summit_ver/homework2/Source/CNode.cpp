@@ -55,7 +55,7 @@ CNode* CNode::setEdge(CEdge* inE){
     mpE=inE;
     return this;
 }
-
+ 
 CEdge* CNode::getEdge(){
     return mpE;
 }

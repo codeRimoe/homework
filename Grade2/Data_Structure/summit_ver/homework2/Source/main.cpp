@@ -12,6 +12,7 @@
 #include <sstream>
 
 #include <cmath>
+#include <ctime>
 #include "CGraph.h"
 #include "CNode.h"
 #include "CEdge.h"

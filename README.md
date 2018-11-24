@@ -4,7 +4,7 @@
 
 These documents mainly are part of my homework and note during college, part of these documents refer to others' work.
 
-I study in School of Geography and Planning, Sun Yat-sen University as an undergraduated student during 2015~2019. Major subject is Geographical Information Science. 
+I study at School of Geography and Planning, Sun Yat-sen University as an undergraduated student during 2015~2019. Major subject is Geographical Information Science. 
 
 The docunments can be used for any purposes, but under the Apache License, Version 2.0, in other words, you may not use this file except in compliance with the Apache License.
 
@@ -48,10 +48,13 @@ The docunments can be used for any purposes, but under the Apache License, Versi
 ### * Grade 3
 
 * Practice_of_RS_and_GIS_Application_Software(IDE and Arcpy)
+* Fundamentals_of GNSS_positioning_and_Application
+* Mulitivariate_Statistical_Analysis
 * Quantitative_Remote_Sensing
 * Photogrammetry
 * Computer_Graphics
-* Quantitative_Geography
+* Web_GIS_and_GIS_Software_Engineering
+* Quantitative_Geography.pdf
 * other
 
 ---

@@ -64,7 +64,7 @@ try:
     E = M / (1 - e)
     while 1:
         _fe = E - e * np.sin(E) - M
-        if np.sum(np.abs(_fe)) < len(_fe) * 1e-7:
+        if np.sum(np.abs(_fe)) < len(_fe) * 1e-32:
             break
         E -= _fe / (1 - e * np.cos(E))
 
@@ -105,7 +105,7 @@ try:
         with open(sys.argv[2], 'w') as rf:
             for _i in range(len(sat_id)):
                 rf.write(sat_id[_i] + ',')
-                rf.write(','.join([str(j) for j in coor[_i]]) + '\n')
+                rf.write(','.join(['%.10f' % j for j in coor[_i]]) + '\n')
         print 'Saved: %s' % sys.argv[2]
     except IndexError:
         pass
